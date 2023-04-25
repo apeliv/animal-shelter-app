@@ -1,8 +1,16 @@
+import Header from "./Header";
+import styled from "styled-components";
+
+const AppStyleContainer = styled.div`
+  width: 80vw;
+  height: 60vw;
+`;
+
 const AnimalShelter = () => {
   return (
-    <div>
-      <p></p>
-    </div>
+    <AppStyleContainer>
+      <Header />
+    </AppStyleContainer>
   );
 };
 
