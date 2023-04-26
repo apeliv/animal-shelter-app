@@ -1,0 +1,86 @@
+.infoSectionStyle {
+  width: 80vw;
+  height: fit-content;
+  border: 3px solid rgb(189, 188, 188);
+  border-radius: 15px;
+  background-color: rgb(189, 188, 188);
+  color: black;
+  margin: 2vw auto;
+}
+
+.infoFlexContainer {
+  display: flex;
+}
+
+.infoData {
+  width: 60%;
+}
+
+iframe {
+  width: 40%;
+  margin: 2vw 3vw;
+}
+
+.textDataStyle {
+  display: flex;
+  justify-content: space-between;
+  margin: 5% 15%;
+  font-size: 1.25vw;
+}
+
+.textDataStyle span {
+  margin: auto 2vw;
+}
+
+#textLabel {
+  font-weight: bold;
+}
+
+.numberDataStyle {
+  display: flex;
+  justify-content: space-between;
+  margin: 5% 15%;
+  font-size: 1.25vw;
+}
+
+.numberDataStyle #numberLabel {
+  font-weight: bold;
+  margin: auto 2vw;
+}
+
+.numberDataStyle #graphicValue {
+  background-color: white;
+  color: #242424;
+  border-radius: 15px;
+  padding: 2%;
+  font-weight: bold;
+  margin: auto 2vw;
+}
+
+h2 {
+  margin-top: 2vw;
+}
+
+.textarea {
+  background-color: white;
+  color: black;
+  width: 40%;
+  height: 5vw;
+  font-size: 1.5vw;
+  margin: 2vw;
+  padding: 1vw;
+  border-radius: 15px;
+}
+
+.messageForm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button {
+  background-color: rgb(30, 125, 73);
+  padding: 1vw 2vw;
+  height: fit-content;
+  font-size: 1.5vw;
+}

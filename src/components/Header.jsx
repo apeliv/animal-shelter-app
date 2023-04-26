@@ -12,11 +12,21 @@ const Header = () => {
       </div>
 
       <nav>
-        <a href="#">About Us</a>
-        <a href="#">List</a>
-        <a href="#">Donations</a>
-        <a href="#">Notifications</a>
-        <a href="#">Input</a>
+        <a className={style.headerLinkStyle} href="/about">
+          About Us
+        </a>
+        <a className={style.headerLinkStyle} href="#">
+          List
+        </a>
+        <a className={style.headerLinkStyle} href="#">
+          Donations
+        </a>
+        <a className={style.headerLinkStyle} href="#">
+          Notifications
+        </a>
+        <a className={style.headerLinkStyle} href="#">
+          Input
+        </a>
       </nav>
     </div>
   );

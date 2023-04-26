@@ -34,7 +34,7 @@ nav {
   height: fit-content;
 }
 
-a:any-link {
+.headerLinkStyle {
   color: #242424;
   border: 1px solid black;
   border-radius: 10px;
@@ -44,8 +44,8 @@ a:any-link {
   font-size: 19px;
 }
 
-a:hover,
-a:active {
+.headerLinkStyle:hover,
+.headerLinkStyle:active {
   background-color: rgb(30, 125, 73);
   color: #242424;
   border: 2px solid black;
