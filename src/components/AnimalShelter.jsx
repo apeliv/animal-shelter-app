@@ -6,7 +6,6 @@ import ErrorPage from "./ErrorPage";
 
 const AppStyleContainer = styled.div`
   width: 80vw;
-  height: 60vw;
 `;
 
 const router = createBrowserRouter([
