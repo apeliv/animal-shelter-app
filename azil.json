@@ -1,63 +1,69 @@
 {
-    "obavijesti" : [
-        {
-            "id": 1,
-            "naslov": "Svečano otvorenje",
-            "datum": "2023-04-17",
-            "tekst": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras faucibus mauris metus, vulputate vulputate neque blandit quis. Nunc ultrices diam ligula, nec commodo purus ullamcorper id. Donec aliquet libero eu tincidunt eleifend. Duis ornare tincidunt nisl quis fringilla. Curabitur bibendum metus mauris, in bibendum lectus vestibulum tristique. Sed in nibh facilisis tortor varius euismod at et lectus. In non congue elit. Donec blandit est consequat, porta tellus eu, placerat odio.",
-            "vazno": true
-        },
-        {
-            "id": 2,
-            "naslov": "Međunarodni dan mačaka",
-            "datum": "2023-02-17",
-            "tekst": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras faucibus mauris metus, vulputate vulputate neque blandit quis. Nunc ultrices diam ligula, nec commodo purus ullamcorper id. Donec aliquet libero eu tincidunt eleifend. Duis ornare tincidunt nisl quis fringilla. Curabitur bibendum metus mauris, in bibendum lectus vestibulum tristique. Sed in nibh facilisis tortor varius euismod at et lectus. In non congue elit. Donec blandit est consequat, porta tellus eu, placerat odio.",
-            "vazno": false
-        }
-    ],
-    "donacije": [
-        {
-            "id": 1,
-            "kategorija" : "donirano",
-            "tip": "Hrana",
-            "vrijednost": 25,
-            "opis": "Suha hrana za pse - 10kg"
-        },
-        {
-            "id": 2,
-            "kategorija" : "trazi",
-            "tip": "Igračke",
-            "vrijednost": 15,
-            "opis": "Grebalica za mačke"
-        },
-        {
-            "id": 3,
-            "kategorija" : "nudi",
-            "tip": "Ostalo",
-            "vrijednost": 25,
-            "opis": "Kavez za srednje papige"
-        }
-    ],
-    "zivotinje": [
-        {
-            "id": 1,
-            "ime": "Garfield",
-            "vrsta": "mačka",
-            "cip": false,
-            "godine": 44,
-            "opis": "Voli lazanje",
-            "pregled": "2022-09-23",
-            "udomljen": true
-        },
-        {
-            "id": 2,
-            "ime": "Snoopy",
-            "vrsta": "pas",
-            "cip": true,
-            "godine": 50,
-            "opis": "Više od običnog psa",
-            "pregled": "2000-02-13",
-            "udomljen": false
-        }
-    ]
+  "notifications": [
+    {
+      "id": 1,
+      "title": "Ceremonial Opening",
+      "date": "2023-04-17",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras faucibus mauris metus, vulputate vulputate neque blandit quis. Nunc ultrices diam ligula, nec commodo purus ullamcorper id. Donec aliquet libero eu tincidunt eleifend. Duis ornare tincidunt nisl quis fringilla. Curabitur bibendum metus mauris, in bibendum lectus vestibulum tristique. Sed in nibh facilisis tortor varius euismod at et lectus. In non congue elit. Donec blandit est consequat, porta tellus eu, placerat odio.",
+      "important": true
+    },
+    {
+      "id": 2,
+      "title": "International Cat Day",
+      "date": "2023-02-17",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras faucibus mauris metus, vulputate vulputate neque blandit quis. Nunc ultrices diam ligula, nec commodo purus ullamcorper id. Donec aliquet libero eu tincidunt eleifend. Duis ornare tincidunt nisl quis fringilla. Curabitur bibendum metus mauris, in bibendum lectus vestibulum tristique. Sed in nibh facilisis tortor varius euismod at et lectus. In non congue elit. Donec blandit est consequat, porta tellus eu, placerat odio.",
+      "important": false
+    }
+  ],
+  "donations": [
+    {
+      "id": 1,
+      "category": "donated",
+      "type": "Food",
+      "value": 25,
+      "description": "Dry dog food - 10kg"
+    },
+    {
+      "id": 2,
+      "category": "search",
+      "type": "Toys",
+      "value": 15,
+      "description": "Cat scratcher"
+    },
+    {
+      "id": 3,
+      "category": "offer",
+      "type": "Other",
+      "value": 25,
+      "description": "Middle sized parrot cage"
+    }
+  ],
+  "animals": [
+    {
+      "id": 1,
+      "name": "Garfield",
+      "value": "cat",
+      "chip": false,
+      "age": 44,
+      "description": "Likes lasagna",
+      "examination": "2022-09-23",
+      "adopted": true
+    },
+    {
+      "id": 2,
+      "name": "Snoopy",
+      "value": "dog",
+      "chip": true,
+      "age": 50,
+      "description": "More than an ordinary dog",
+      "examination": "2000-02-13",
+      "adopted": false
+    }
+  ],
+  "messages": [
+    {
+      "message": "Hey, this is a first message.",
+      "id": 1
+    }
+  ]
 }

@@ -2,7 +2,21 @@ import style from "../components/ShelterInfo.module.css";
 import InfoTextData from "../components/InfoTextData";
 import InfoNumberData from "../components/InfoNumberData";
 import MessageForm from "../components/MessageForm";
+import axios from "axios";
+import { useState, useEffect } from "react";
+
 const ShelterInfo = () => {
+  const [messages, setMessages] = useState([]);
+
+  useEffect(() => {
+    axios
+      .get("http://localhost:3001/messages")
+      .then((res) => {
+        setMessages(res.data);
+      })
+      .catch((err) => console.log(err));
+  }, []);
+
   return (
     <div className={style.infoSectionStyle}>
       <h2>About Us</h2>
@@ -23,7 +37,7 @@ const ShelterInfo = () => {
         </div>
       </div>
       <h2>Send us a message</h2>
-      <MessageForm />
+      <MessageForm addMessageToDataBase={setMessages} />
     </div>
   );
 };
