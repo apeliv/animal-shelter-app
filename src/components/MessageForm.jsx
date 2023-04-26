@@ -7,7 +7,6 @@ const MessageForm = ({ addMessageToDataBase }) => {
   const handleClick = (e) => {
     e.preventDefault();
     const requestBody = ProcessBody(input);
-    console.log(requestBody);
     axios
       .post(" http://localhost:3001/messages", requestBody)
       .then((res) => addMessageToDataBase((prev) => [...prev, res.data]))
