@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import ShelterInfo from "../routes/ShelterInfo";
 import ErrorPage from "./ErrorPage";
+import Root from "./Root";
 
 const AppStyleContainer = styled.div`
   width: 80vw;
@@ -11,7 +12,7 @@ const AppStyleContainer = styled.div`
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <div></div>,
+    element: <Root />,
     errorElement: <ErrorPage />,
   },
   {
