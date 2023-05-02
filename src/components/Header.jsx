@@ -15,7 +15,7 @@ const Header = () => {
         <a className={style.headerLinkStyle} href="/about">
           About Us
         </a>
-        <a className={style.headerLinkStyle} href="#">
+        <a className={style.headerLinkStyle} href="/list">
           List
         </a>
         <a className={style.headerLinkStyle} href="#">

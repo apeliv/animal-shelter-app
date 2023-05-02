@@ -1,0 +1,39 @@
+.listPageSection {
+  width: 80vw;
+  height: 60vw;
+  margin: 2vw auto;
+  display: flex;
+}
+
+.filterSection {
+  width: 30%;
+}
+
+.animalsCardsSection {
+  width: 70%;
+  height: fit-content;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.filterSection {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: baseline;
+}
+
+.filterTitle {
+  font-size: 2vw;
+  margin-bottom: 1vw;
+  margin-left: 4vw;
+}
+
+.inputText {
+  color: black;
+  background-color: white;
+  padding: 1vw;
+  border-radius: 20px;
+  font-size: large;
+  margin-left: 4vw;
+}

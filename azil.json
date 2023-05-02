@@ -42,7 +42,8 @@
     {
       "id": 1,
       "name": "Garfield",
-      "value": "cat",
+      "type": "Cat",
+      "pictureUrl": "https://nationaltoday.com/wp-content/uploads/2019/06/national-garfield-cat-day-1200x834.jpg",
       "chip": false,
       "age": 44,
       "description": "Likes lasagna",
@@ -50,14 +51,26 @@
       "adopted": true
     },
     {
-      "id": 2,
       "name": "Snoopy",
-      "value": "dog",
+      "type": "Dog",
+      "pictureUrl": "https://www.thesun.co.uk/wp-content/uploads/2023/04/snoopy-s-identical-real-life-809914156.jpg",
       "chip": true,
       "age": 50,
       "description": "More than an ordinary dog",
       "examination": "2000-02-13",
-      "adopted": false
+      "adopted": false,
+      "id": 2
+    },
+    {
+      "id": 3,
+      "name": "Rex",
+      "type": "Dog",
+      "pictureUrl": "https://www.akc.org/wp-content/uploads/2016/06/German-Shepherd-Dog-laying-down-in-the-backyard-500x487.jpeg",
+      "chip": true,
+      "age": 36,
+      "description": "Loves chasing cats",
+      "examination": "2000-02-13",
+      "adopted": true
     }
   ],
   "messages": [
