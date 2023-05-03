@@ -23,7 +23,7 @@ const Filter = ({
         text="Adopted"
       />
       <RadioInput
-        id="adopted"
+        id="notAdopted"
         value="false"
         setFilter={setAdoptionFilter}
         text="Not Adopted"

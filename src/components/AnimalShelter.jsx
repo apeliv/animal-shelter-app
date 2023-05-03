@@ -5,6 +5,8 @@ import ShelterInfo from "../routes/ShelterInfo";
 import ErrorPage from "./ErrorPage";
 import Root from "./Root";
 import AnimalsList from "../routes/AnimalsList";
+import UserContext from "../assets/userContext";
+import { useState } from "react";
 
 const AppStyleContainer = styled.div`
   width: 80vw;
@@ -29,10 +31,13 @@ const router = createBrowserRouter([
 ]);
 
 const AnimalShelter = () => {
+  const [isAdmin, setIsAdmin] = useState(false);
   return (
     <AppStyleContainer>
-      <Header />
-      <RouterProvider router={router} />
+      <Header isAdmin={isAdmin} setIsAdmin={() => setIsAdmin(!isAdmin)} />
+      <UserContext.Provider value={isAdmin}>
+        <RouterProvider router={router} />
+      </UserContext.Provider>
     </AppStyleContainer>
   );
 };

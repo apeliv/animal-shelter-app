@@ -1,13 +1,16 @@
 import style from "./Header.module.css";
 
-const Header = () => {
+const Header = ({ isAdmin, setIsAdmin }) => {
   return (
     <div className={style.headerContainer}>
       <div className={style.titleAndUser}>
         <h2 className={style.title}>Animal Shelter</h2>
         <div className={style.user}>
           <span>ADMIN</span>
-          <input type="checkbox" />
+          <label className={style.switch}>
+            <input type="checkbox" value={isAdmin} onChange={setIsAdmin} />
+            <span className={style.slider}></span>
+          </label>
         </div>
       </div>
 
