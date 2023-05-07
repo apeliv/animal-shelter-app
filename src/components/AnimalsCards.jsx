@@ -10,7 +10,6 @@ const AnimalsCards = ({
   typeFilter,
   selectedFilter,
   searchFilter,
-  setAdoptionFilter,
 }) => {
   async function handleChangeOfRadioAndSearchAfterFirstInput(filter) {
     const res = await axios.get("http://localhost:3001/animals");

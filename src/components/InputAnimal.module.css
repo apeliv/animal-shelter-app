@@ -1,0 +1,111 @@
+.formSection {
+  width: 72vw;
+  height: fit-content;
+  padding-bottom: 2vw;
+  border: 3px solid rgb(189, 188, 188);
+  border-radius: 15px;
+  background-color: rgb(189, 188, 188);
+  color: black;
+  margin: 2vw auto;
+  font-size: 1.5vw;
+  text-align: left;
+}
+
+#formTitle {
+  font-weight: 600;
+  background-color: rgb(30, 125, 73);
+  margin: 0;
+  border-radius: 10px;
+  padding: 2vw;
+  text-align: center;
+}
+
+.inputRowContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.inputRowTextItem {
+  width: 80%;
+  padding: 0 2vw;
+}
+
+.inputRowCheckItem {
+  width: 20%;
+  margin-top: 5%;
+  margin-right: 10%;
+  padding: 0 2vw;
+}
+
+.inputText {
+  padding: 1vw;
+  width: 50%;
+  background-color: white;
+  color: gray;
+  font-size: 1.5vw;
+  border-radius: 10px;
+}
+
+.textLabel {
+  display: block;
+  margin-top: 2vw;
+  margin-left: 0.5vw;
+}
+
+.inputSelect {
+  padding: 1vw;
+  width: 55%;
+  background-color: white;
+  color: black;
+  font-size: 1.5vw;
+  border-radius: 10px;
+}
+
+.checkboxLabel {
+  margin-left: 1vw;
+}
+
+.inputCheckBox {
+  width: 1.5vw;
+  height: 1.5vw;
+  margin-left: 1vw;
+}
+
+.inputDate {
+  padding: 1vw;
+  width: 75%;
+  background-color: white;
+  color: black;
+  font-size: 1.5vw;
+  border-radius: 10px;
+  margin-bottom: 5%;
+  margin-top: 3%;
+  margin-right: 4vw;
+}
+
+.inputTextArea {
+  background-color: white;
+  color: black;
+  width: 50%;
+  height: 5vw;
+  font-size: 1.5vw;
+  padding: 1vw;
+  border-radius: 15px;
+}
+
+.button {
+  background-color: rgb(30, 125, 73);
+  padding: 1vw 2vw;
+  height: fit-content;
+  font-size: 1.5vw;
+  margin-top: 3vw;
+  justify-self: center;
+}
+
+.warning {
+  color: red;
+  font-size: 1vw;
+  text-align: center;
+  margin-right: 45%;
+}

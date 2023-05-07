@@ -27,9 +27,11 @@ const Header = ({ isAdmin, setIsAdmin }) => {
         <a className={style.headerLinkStyle} href="#">
           Notifications
         </a>
-        <a className={style.headerLinkStyle} href="#">
-          Input
-        </a>
+        {isAdmin && (
+          <a className={style.headerLinkStyle} href="/form">
+            Input
+          </a>
+        )}
       </nav>
     </div>
   );

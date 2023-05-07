@@ -22,9 +22,12 @@ const Card = ({ animal, setAnimals }) => {
     setUpdatedInput({
       name: animal.name,
       type: animal.type,
+      age: animal.age,
+      chip: animal.chip,
       pictureUrl: animal.pictureUrl,
       description: animal.description,
       adopted: animal.adopted,
+      examinationDate: animal.examinationDate,
     });
     setIsEditClicked(true);
   };

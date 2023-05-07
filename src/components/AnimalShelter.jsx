@@ -7,6 +7,7 @@ import Root from "./Root";
 import AnimalsList from "../routes/AnimalsList";
 import UserContext from "../assets/userContext";
 import { useState } from "react";
+import InputAnimal from "../routes/InputAnimal";
 
 const AppStyleContainer = styled.div`
   width: 80vw;
@@ -26,6 +27,11 @@ const router = createBrowserRouter([
   {
     path: "/list",
     element: <AnimalsList />,
+    errorElement: <ErrorPage />,
+  },
+  {
+    path: "/form",
+    element: <InputAnimal />,
     errorElement: <ErrorPage />,
   },
 ]);
