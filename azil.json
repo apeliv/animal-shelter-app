@@ -36,6 +36,34 @@
       "type": "Other",
       "value": 25,
       "description": "Middle sized parrot cage"
+    },
+    {
+      "category": "offer",
+      "type": "Medication",
+      "value": 12,
+      "description": "Medication for parrots",
+      "id": 4
+    },
+    {
+      "category": "search",
+      "type": "Food",
+      "value": 4,
+      "description": "Dog Biscuits",
+      "id": 5
+    },
+    {
+      "category": "offer",
+      "type": "Toys",
+      "value": 3,
+      "description": "Cat plushys.",
+      "id": 6
+    },
+    {
+      "category": "search",
+      "type": "Food",
+      "value": 2,
+      "description": "Whiskas",
+      "id": 7
     }
   ],
   "animals": [
@@ -112,5 +140,17 @@
       "id": 1
     }
   ],
-  "types": ["Cat", "Dog", "Fish", "Bird", "Other"]
+  "types": [
+    "Cat",
+    "Dog",
+    "Fish",
+    "Bird",
+    "Other"
+  ],
+  "donationTypes": [
+    "Food",
+    "Medication",
+    "Toys",
+    "Veterinary expenses"
+  ]
 }
