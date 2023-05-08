@@ -17,53 +17,39 @@
   ],
   "donations": [
     {
-      "id": 1,
       "category": "donated",
-      "type": "Food",
+      "type": "Other",
       "value": 25,
-      "description": "Dry dog food - 10kg"
+      "description": "Middle sized parrot cage",
+      "id": 10
     },
     {
-      "id": 2,
+      "category": "donated",
+      "type": "Food",
+      "value": 5,
+      "description": "Pedigree 5kg ",
+      "id": 11
+    },
+    {
       "category": "search",
       "type": "Toys",
       "value": 15,
-      "description": "Cat scratcher"
+      "description": "Cat scratcher",
+      "id": 13
     },
     {
-      "id": 3,
       "category": "offer",
-      "type": "Other",
-      "value": 25,
-      "description": "Middle sized parrot cage"
+      "type": "Food",
+      "value": 10,
+      "description": "Whiskas 2kg ",
+      "id": 14
     },
     {
       "category": "offer",
       "type": "Medication",
-      "value": 12,
-      "description": "Medication for parrots",
-      "id": 4
-    },
-    {
-      "category": "search",
-      "type": "Food",
-      "value": 4,
-      "description": "Dog Biscuits",
-      "id": 5
-    },
-    {
-      "category": "offer",
-      "type": "Toys",
-      "value": 3,
-      "description": "Cat plushys.",
-      "id": 6
-    },
-    {
-      "category": "search",
-      "type": "Food",
-      "value": 2,
-      "description": "Whiskas",
-      "id": 7
+      "value": 6,
+      "description": "",
+      "id": 15
     }
   ],
   "animals": [
@@ -151,6 +137,7 @@
     "Food",
     "Medication",
     "Toys",
-    "Veterinary expenses"
+    "Veterinary expenses",
+    "Other"
   ]
 }

@@ -1,6 +1,7 @@
 import { useContext } from "react";
 import UserContext from "../assets/userContext";
 import styled from "styled-components";
+import axios from "axios";
 
 const ButtonContainer = styled.div`
   display: flex;
@@ -14,8 +15,38 @@ const Button = styled.button`
   font-size: large;
 `;
 
-const Row = ({ donation, filter }) => {
+const Row = ({ donation, filter, setIsDonationStatusChangeState }) => {
   const isAdmin = useContext(UserContext);
+
+  const searchBodyRequest = {
+    category: "search",
+    type: donation.type,
+    value: donation.value,
+    description: donation.description,
+  };
+
+  const moveToDonatedList = () => {
+    axios
+      .patch(`http://localhost:3001/donations/${donation.id}`, {
+        category: "donated",
+      })
+      .then(() => setIsDonationStatusChangeState())
+      .catch((err) => console.log(err));
+  };
+
+  const removeDonation = () => {
+    axios
+      .delete(`http://localhost:3001/donations/${donation.id}`)
+      .then(() => setIsDonationStatusChangeState())
+      .catch((err) => console.log(err));
+  };
+
+  const moveToSearchList = () => {
+    axios
+      .post("http://localhost:3001/donations", searchBodyRequest)
+      .then(() => setIsDonationStatusChangeState())
+      .catch((err) => console.log(err));
+  };
   return (
     <tr>
       <td>{donation.type}</td>
@@ -25,19 +56,19 @@ const Row = ({ donation, filter }) => {
         {isAdmin ? (
           filter === "search" ? (
             <ButtonContainer>
-              <Button>Donated</Button>
-              <Button>Delete</Button>
+              <Button onClick={moveToDonatedList}>Donated</Button>
+              <Button onClick={removeDonation}>Delete</Button>
             </ButtonContainer>
           ) : filter === "offer" ? (
-            <Button>Accept</Button>
+            <Button onClick={moveToDonatedList}>Accept</Button>
           ) : (
             <ButtonContainer>
-              <Button>Repeat</Button>
-              <Button>Delete</Button>
+              <Button onClick={moveToSearchList}>Repeat</Button>
+              <Button onClick={removeDonation}>Delete</Button>
             </ButtonContainer>
           )
         ) : filter === "search" ? (
-          <Button>Donate</Button>
+          <Button onClick={moveToDonatedList}>Donate</Button>
         ) : (
           <></>
         )}

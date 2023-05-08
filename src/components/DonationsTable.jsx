@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import style from "./Donations.module.css";
 import Row from "./Row";
 import axios from "axios";
@@ -9,12 +9,14 @@ const DonationsTable = ({
   filter,
   isSubmitChangeState,
 }) => {
+  const [isDonationStatusChangeState, setIsDonationStatusChangeState] =
+    useState(false);
   useEffect(() => {
     axios
       .get(" http://localhost:3001/donations")
       .then((res) => setDonations(res.data))
       .catch((err) => console.log(err));
-  }, [isSubmitChangeState]);
+  }, [isSubmitChangeState, isDonationStatusChangeState]);
   return (
     <div className={style.tableSection}>
       <h2>{title}</h2>
@@ -32,7 +34,14 @@ const DonationsTable = ({
           {donations
             .filter((donation) => donation.category === filter)
             .map((donation) => (
-              <Row key={donation.id} donation={donation} filter={filter} />
+              <Row
+                key={donation.id}
+                donation={donation}
+                filter={filter}
+                setIsDonationStatusChangeState={() =>
+                  setIsDonationStatusChangeState(!isDonationStatusChangeState)
+                }
+              />
             ))}
         </tbody>
       </table>

@@ -40,7 +40,7 @@ const Donations = () => {
         />
       )}
       <DonationsTable
-        title="Search:"
+        title="Demand:"
         donations={donations}
         setDonations={setDonations}
         filter="search"
