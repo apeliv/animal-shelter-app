@@ -1,6 +1,6 @@
 .listPageSection {
   width: 80vw;
-  height: 60vw;
+  height: fit-content;
   margin: 2vw auto;
   display: flex;
 }

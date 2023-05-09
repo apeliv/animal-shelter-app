@@ -1,4 +1,4 @@
-.donationsSection {
+.notificationsSection {
   display: flex;
   flex-direction: column;
   width: 80vw;
@@ -6,9 +6,18 @@
   color: black;
   margin: 2vw auto;
   padding: 2vw auto;
+  font-size: large;
 }
 
-.button {
+.notificationsTitle {
+  margin-left: 2vw;
+  margin-top: 2vw;
+  color: tomato;
+  font-family: "Courier New", Courier, monospace;
+  text-align: left;
+}
+
+.newNotificationButton {
   background-color: rgb(30, 125, 73);
   width: fit-content;
   margin: 2vw;
@@ -16,21 +25,43 @@
   padding: 1vw 2vw;
   height: fit-content;
   font-size: 1.5vw;
-  color: black;
+  color: white;
 }
 
-.tableSection {
-  text-align: left;
+.notification {
+  margin: 2vw;
 }
 
-.tableSection h2 {
-  margin-left: 2vw;
-  margin-top: 2vw;
-  color: tomato;
-  font-family: "Courier New", Courier, monospace;
+.notificationHeader {
+  display: flex;
+  justify-content: space-between;
+  padding: 2vw;
+  font-weight: 600;
+  z-index: 4s;
 }
 
-.donationInput {
+.notificationBody {
+  padding: 2vw;
+  border: 2px solid black;
+  display: flex;
+  flex-direction: column;
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: end;
+}
+
+.notificationBody .button {
+  width: fit-content;
+  background-color: rgba(255, 255, 255, 0.87);
+}
+
+.button img {
+  width: 2vw;
+}
+
+.notificationInputContainer {
   display: flex;
   justify-content: space-evenly;
   width: 100%;
@@ -38,14 +69,9 @@
   margin-top: 2vw;
 }
 
-.selectInput {
-  padding: 1vw;
-  width: fit-content;
-  background-color: white;
-  color: black;
+.inputLabel {
   font-size: large;
-  border-radius: 10px;
-  text-align: center;
+  margin-right: 1vw;
 }
 
 .textInput {
@@ -65,21 +91,20 @@
   padding: 1vw;
   border-radius: 15px;
 }
-
-.inputLabel {
-  font-size: large;
-  margin-right: 1vw;
-}
-
 .textAreaLabel {
   font-size: large;
-  margin-bottom: 2vw;
   margin-right: 1vw;
+  align-self: center;
 }
 
 .textAreaContainer {
   display: flex;
   align-items: end;
+}
+
+.checkBoxInput {
+  width: 1.25vw;
+  height: 1.25vw;
 }
 
 .button {
@@ -88,21 +113,5 @@
   height: fit-content;
   font-size: large;
   color: white;
-}
-
-table {
-  margin: 2vw 0;
-  width: 100%;
-  font-size: large;
-}
-
-tr {
-  padding: 2vw;
-}
-
-th,
-td {
-  height: 2vw;
-  width: 25%;
-  text-align: center;
+  border-radius: 15px;
 }

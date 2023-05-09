@@ -24,7 +24,7 @@ const Header = ({ isAdmin, setIsAdmin }) => {
         <a className={style.headerLinkStyle} href="/donations">
           Donations
         </a>
-        <a className={style.headerLinkStyle} href="#">
+        <a className={style.headerLinkStyle} href="/notifications">
           Notifications
         </a>
         {isAdmin && (

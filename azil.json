@@ -3,16 +3,23 @@
     {
       "id": 1,
       "title": "Ceremonial Opening",
-      "date": "2023-04-17",
+      "date": "2023-04-17T14:48:00.653Z",
       "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras faucibus mauris metus, vulputate vulputate neque blandit quis. Nunc ultrices diam ligula, nec commodo purus ullamcorper id. Donec aliquet libero eu tincidunt eleifend. Duis ornare tincidunt nisl quis fringilla. Curabitur bibendum metus mauris, in bibendum lectus vestibulum tristique. Sed in nibh facilisis tortor varius euismod at et lectus. In non congue elit. Donec blandit est consequat, porta tellus eu, placerat odio.",
       "important": true
     },
     {
       "id": 2,
       "title": "International Cat Day",
-      "date": "2023-02-17",
+      "date": "2023-02-17T10:30:16.241Z",
       "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras faucibus mauris metus, vulputate vulputate neque blandit quis. Nunc ultrices diam ligula, nec commodo purus ullamcorper id. Donec aliquet libero eu tincidunt eleifend. Duis ornare tincidunt nisl quis fringilla. Curabitur bibendum metus mauris, in bibendum lectus vestibulum tristique. Sed in nibh facilisis tortor varius euismod at et lectus. In non congue elit. Donec blandit est consequat, porta tellus eu, placerat odio.",
       "important": false
+    },
+    {
+      "title": "Anniversary Day",
+      "date": "2023-05-09T17:34:58.438Z",
+      "text": "We celebrate two years since we opened our office.\nTherefore, we have many special offers that might encourage you to come to our office and perhaps find your pet soulmate.",
+      "important": true,
+      "id": 3
     }
   ],
   "donations": [
