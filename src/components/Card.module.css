@@ -36,7 +36,7 @@
 
 .descriptionSection {
   font-size: large;
-  margin: 1vw 2vw;
+  margin: 1vw;
 }
 
 .descriptionSection #label {
@@ -59,7 +59,7 @@
 .editButton {
   margin-bottom: 1vw;
   font-size: large;
-  background-color: rgb(247, 122, 6);
+  background-color: black;
 }
 
 .saveButton {

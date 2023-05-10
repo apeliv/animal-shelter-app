@@ -38,25 +38,25 @@
       "id": 11
     },
     {
-      "category": "search",
-      "type": "Toys",
-      "value": 15,
-      "description": "Cat scratcher",
-      "id": 13
-    },
-    {
-      "category": "offer",
-      "type": "Food",
-      "value": 10,
-      "description": "Whiskas 2kg ",
-      "id": 14
-    },
-    {
       "category": "offer",
       "type": "Medication",
       "value": 6,
       "description": "",
       "id": 15
+    },
+    {
+      "category": "search",
+      "type": "Toys",
+      "value": 15,
+      "description": "Cat scratcher",
+      "id": 18
+    },
+    {
+      "category": "offer",
+      "type": "Food",
+      "value": 15,
+      "description": "Whiskas 2kg",
+      "id": 19
     }
   ],
   "animals": [
@@ -99,7 +99,7 @@
       "age": 16,
       "chip": false,
       "pictureUrl": "https://www.dalmatianwelfare.co.uk/wp-content/uploads/image2-7.jpeg",
-      "description": "A dalmatian dog.",
+      "description": "A dalmatian dog ",
       "adopted": false,
       "examinationDate": "2023-05-01",
       "id": 4
@@ -110,7 +110,7 @@
       "age": 3,
       "chip": true,
       "pictureUrl": "https://images.saymedia-content.com/.image/t_share/MTc0NDM2NTA1MDYwNjQ4NTgy/the-healing-power-of-pet-fish.jpg",
-      "description": "Starred in Finding Nemo.",
+      "description": "Starred in Finding Nemo",
       "adopted": false,
       "examinationDate": "2022-11-07",
       "id": 5
@@ -121,7 +121,7 @@
       "age": 6,
       "chip": false,
       "pictureUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Eopsaltria_australis_-_Mogo_Campground.jpg/640px-Eopsaltria_australis_-_Mogo_Campground.jpg",
-      "description": "Sings beautifully.",
+      "description": "Sings beautifully",
       "adopted": true,
       "examinationDate": "2023-04-26",
       "id": 6
@@ -131,15 +131,13 @@
     {
       "message": "Hey, this is a first message.",
       "id": 1
+    },
+    {
+      "message": "Hello, i was just curious do you provide medical examinations as a part of your service.\nBest regards,\nJohn Doe.",
+      "id": 2
     }
   ],
-  "types": [
-    "Cat",
-    "Dog",
-    "Fish",
-    "Bird",
-    "Other"
-  ],
+  "types": ["Cat", "Dog", "Fish", "Bird", "Other"],
   "donationTypes": [
     "Food",
     "Medication",

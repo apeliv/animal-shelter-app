@@ -4,8 +4,8 @@ const ErrorPage = () => {
   const error = useRouteError();
   return (
     <div>
-      <h1>Warning!</h1>
-      <p>An error has occurred</p>
+      <h1>Oops!</h1>
+      <p>Something went wrong</p>
       <p>
         <i>{error.statusText || error.message}</i>
       </p>

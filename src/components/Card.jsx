@@ -54,7 +54,7 @@ const Card = ({ animal, setAnimals }) => {
     <div
       className={style.cardSection}
       style={{
-        backgroundColor: `${animal.adopted ? "cornflowerblue" : "red"}`,
+        backgroundColor: `${animal.adopted ? "#027b93" : "tomato"}`,
       }}
     >
       <div className={style.pictureAndInfo}>

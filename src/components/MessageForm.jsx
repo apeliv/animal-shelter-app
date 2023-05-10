@@ -9,7 +9,10 @@ const MessageForm = ({ addMessageToDataBase }) => {
     const requestBody = ProcessBody(input);
     axios
       .post(" http://localhost:3001/messages", requestBody)
-      .then((res) => addMessageToDataBase((prev) => [...prev, res.data]))
+      .then((res) => {
+        addMessageToDataBase((prev) => [...prev, res.data]);
+        setInput("");
+      })
       .catch((err) => console.log(err));
   };
 

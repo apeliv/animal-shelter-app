@@ -15,6 +15,9 @@ const Header = ({ isAdmin, setIsAdmin }) => {
       </div>
 
       <nav>
+        <a className={style.headerLinkStyle} href="/">
+          Home
+        </a>
         <a className={style.headerLinkStyle} href="/about">
           About Us
         </a>

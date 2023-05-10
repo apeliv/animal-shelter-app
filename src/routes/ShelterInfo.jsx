@@ -4,9 +4,12 @@ import InfoNumberData from "../components/InfoNumberData";
 import MessageForm from "../components/MessageForm";
 import axios from "axios";
 import { useState, useEffect } from "react";
+import { useContext } from "react";
+import UserContext from "../assets/userContext";
 
 const ShelterInfo = () => {
   const [messages, setMessages] = useState([]);
+  const isAdmin = useContext(UserContext);
 
   useEffect(() => {
     axios
@@ -36,8 +39,21 @@ const ShelterInfo = () => {
           <InfoNumberData label="Opening Year" value="2018" />
         </div>
       </div>
-      <h2 className={style.infoTitle}>Send us a message</h2>
-      <MessageForm addMessageToDataBase={setMessages} />
+      {isAdmin ? (
+        <div className={style.messagesContainer}>
+          <h2 className={style.infoTitle}>New messages</h2>
+          {messages.map((message) => (
+            <p className={style.message} key={message.id}>
+              {message.message}
+            </p>
+          ))}
+        </div>
+      ) : (
+        <>
+          <h2 className={style.infoTitle}>Send us a message</h2>
+          <MessageForm addMessageToDataBase={setMessages} />
+        </>
+      )}
     </div>
   );
 };

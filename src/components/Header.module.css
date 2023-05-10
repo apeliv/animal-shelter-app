@@ -85,7 +85,7 @@ nav {
   height: 2vw;
   display: flex;
   justify-content: space-around;
-  background-color: rgb(247, 122, 6);
+  background-color: rgb(30, 125, 73);
   height: fit-content;
 }
 
@@ -96,7 +96,7 @@ nav {
   margin: 1vw auto;
   padding: 1vw 2vw;
   background-color: rgb(189, 188, 188);
-  font-size: 19px;
+  font-size: large;
 }
 
 .headerLinkStyle:hover,
