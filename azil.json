@@ -137,7 +137,13 @@
       "id": 2
     }
   ],
-  "types": ["Cat", "Dog", "Fish", "Bird", "Other"],
+  "types": [
+    "Cat",
+    "Dog",
+    "Fish",
+    "Bird",
+    "Other"
+  ],
   "donationTypes": [
     "Food",
     "Medication",

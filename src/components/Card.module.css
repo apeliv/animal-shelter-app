@@ -1,9 +1,7 @@
 .cardSection {
   border: 2px solid black;
   border-radius: 20px;
-  width: 45%;
   height: fit-content;
-  margin: 1vw;
 }
 
 .pictureAndInfo {
@@ -11,22 +9,18 @@
 }
 
 .pictureAndInfo img {
-  width: 7vw;
-  height: 7vw;
   margin: 1vw 2vw;
 }
 
 .editInfoSection {
-  width: 55%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  align-items: baseline;
+  /* align-items: baseline; */
   font-size: large;
 }
 
 .infoSection {
-  width: 65%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -52,36 +46,30 @@
 
 .adoptButton {
   margin-bottom: 1vw;
-  font-size: large;
   background-color: rgb(30, 125, 73);
 }
 
 .editButton {
   margin-bottom: 1vw;
-  font-size: large;
   background-color: black;
 }
 
 .saveButton {
   margin-bottom: 1vw;
-  font-size: large;
   background-color: black;
   color: white;
 }
 
 .inputText {
   background-color: white;
-  width: 54%;
   padding: 1vw;
   color: black;
-  font-size: 1vw;
   font-weight: 600;
   border-radius: 10px;
   text-align: center;
 }
 
 .inputImgUrl {
-  width: 6.5vw;
   padding: 1vw;
   height: fit-content;
   margin: 3vw 0.5vw;
@@ -95,7 +83,6 @@
   margin-left: 1vw;
   background-color: black;
   color: white;
-  font-size: 1vw;
   font-weight: 600;
   border-radius: 10px;
   text-align: center;
@@ -106,13 +93,132 @@
   width: 95%;
   padding: 1vw;
   color: black;
-  font-size: 1vw;
   font-weight: 600;
   border-radius: 10px;
   text-align: center;
 }
 
-.checkbox {
-  width: 1vw;
-  height: 1vw;
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .cardSection {
+    width: max-content;
+    margin: 1vw 0 1vw 3vw;
+  }
+
+  .pictureAndInfo {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .infoSection {
+    width: 100%;
+    align-items: center;
+  }
+
+  .pictureAndInfo img {
+    width: 25%;
+    height: 25%;
+  }
+
+  .descriptionLabel {
+    text-align: center;
+  }
+
+  .adoptButton {
+    font-size: 3.5vw;
+  }
+
+  .editButton {
+    font-size: 3.5vw;
+  }
+
+  .saveButton {
+    font-size: 3.5vw;
+  }
+
+  .editInfoSection {
+    width: max-content;
+    align-items: center;
+  }
+
+  .inputImgUrl {
+    width: 90%;
+  }
+
+  .inputText {
+    width: 90%;
+    font-size: 3vw;
+  }
+
+  .inputSelect {
+    width: 100%;
+    font-size: 3vw;
+  }
+
+  .checkbox {
+    width: 3vw;
+    height: 3vw;
+  }
+
+  .inputDescription {
+    font-size: 3vw;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .cardSection {
+    width: 45%;
+    margin: 1vw;
+  }
+
+  .infoSection {
+    width: 65%;
+  }
+
+  .pictureAndInfo img {
+    width: 7vw;
+    height: 7vw;
+  }
+
+  .descriptionLabel {
+    text-align: left;
+  }
+
+  .adoptButton {
+    font-size: large;
+  }
+
+  .editButton {
+    font-size: large;
+  }
+
+  .saveButton {
+    font-size: large;
+  }
+
+  .editInfoSection {
+    width: 55%;
+    align-items: baseline;
+  }
+
+  .inputImgUrl {
+    width: 6.5vw;
+  }
+
+  .inputText {
+    width: 54%;
+    font-size: 1vw;
+  }
+
+  .inputSelect {
+    font-size: 1vw;
+  }
+
+  .checkbox {
+    width: 1vw;
+    height: 1vw;
+  }
+
+  .inputDescription {
+    font-size: 1vw;
+  }
 }

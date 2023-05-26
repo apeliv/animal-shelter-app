@@ -24,9 +24,17 @@
 }
 
 .filterTitle {
-  font-size: 2vw;
   margin-bottom: 1vw;
   margin-left: 4vw;
+}
+
+.filterLabel {
+  margin: auto 1vw;
+}
+
+.filterInputAndLabel {
+  margin-left: 4vw;
+  margin-bottom: 0.5vw;
 }
 
 .inputText {
@@ -34,6 +42,50 @@
   background-color: white;
   padding: 1vw;
   border-radius: 20px;
-  font-size: large;
-  margin-left: 4vw;
+}
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .listPageSection {
+    position: absolute;
+    top: 25%;
+    right: 0;
+    left: 0;
+  }
+
+  .filterTitle {
+    font-size: 5vw;
+  }
+
+  .filterLabel {
+    font-size: 4vw;
+  }
+
+  .inputText {
+    font-size: 3vw;
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .animalsCardsSection {
+    margin-left: 2vw;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .listPageSection {
+    width: 100%;
+  }
+
+  .filterTitle {
+    font-size: 2vw;
+  }
+
+  .filterLabel {
+    font-size: 1.5vw;
+  }
+
+  .inputText {
+    font-size: large;
+    margin-left: 4vw;
+  }
 }

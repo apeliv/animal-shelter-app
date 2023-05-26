@@ -1,23 +1,12 @@
-import styled from "styled-components";
+import style from "./Root.module.css";
 import logo from "/public/shelter_logo.png";
-
-const RootPageContent = styled.div`
-  height: fit-content;
-  display: flex;
-  align-items: center;
-`;
-
-const Logo = styled.img`
-  width: 47%;
-  height: fit-content;
-`;
 
 const Root = () => {
   return (
-    <RootPageContent>
-      <Logo src={logo} alt="Logo picture" />
-      <h1>Provide a hand for a paw.</h1>
-    </RootPageContent>
+    <div className={style.rootPageContent}>
+      <img className={style.logo} src={logo} alt="Logo picture" />
+      <h1 className={style.text}>Provide a hand for a paw.</h1>
+    </div>
   );
 };
 

@@ -1,16 +1,8 @@
-import styled from "styled-components";
-const Label = styled.label`
-  font-size: 1.5vw;
-  margin: auto 1vw;
-`;
+import style from "./AnimalsList.module.css";
 
-const InputAndLabel = styled.div`
-  margin-left: 4vw;
-  margin-bottom: 0.5vw;
-`;
 const RadioInput = ({ id, value, setFilter, defaultChecked, text }) => {
   return (
-    <InputAndLabel>
+    <div className={style.filterInputAndLabel}>
       <input
         type="radio"
         name="animal"
@@ -19,8 +11,10 @@ const RadioInput = ({ id, value, setFilter, defaultChecked, text }) => {
         onChange={setFilter}
         defaultChecked={defaultChecked}
       />
-      <Label htmlFor={id}>{text}</Label>
-    </InputAndLabel>
+      <label className={style.filterLabel} htmlFor={id}>
+        {text}
+      </label>
+    </div>
   );
 };
 

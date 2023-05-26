@@ -1,0 +1,26 @@
+.rootPageContent {
+  height: fit-content;
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 47%;
+  height: fit-content;
+}
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .rootPageContent {
+    flex-direction: column;
+    position: relative;
+    top: 10vw;
+  }
+
+  .logo {
+    width: 75%;
+  }
+
+  .text {
+    margin-top: 0;
+  }
+}

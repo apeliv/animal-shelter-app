@@ -132,7 +132,7 @@ const Card = ({ animal, setAnimals }) => {
       </div>
 
       <div className={style.descriptionSection}>
-        <p id={style.label}>Description:</p>
+        <p className={style.descriptionLabel}>Description:</p>
         {isEditClicked ? (
           <input
             className={style.inputDescription}

@@ -11,7 +11,6 @@
 
 .notificationsTitle {
   margin-left: 2vw;
-  margin-top: 2vw;
   color: tomato;
   font-family: "Courier New", Courier, monospace;
   text-align: left;
@@ -114,4 +113,41 @@
   font-size: large;
   color: white;
   border-radius: 15px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .notificationsSection {
+    width: fit-content;
+    position: absolute;
+    top: 25%;
+    right: 0;
+    left: 0;
+  }
+
+  .notificationInputContainer {
+    flex-direction: column;
+  }
+
+  .notificationsTitle {
+    margin-top: 10vw;
+  }
+
+  .notificationHeader {
+    flex-wrap: wrap;
+  }
+
+  .newNotificationButton {
+    align-self: center;
+  }
+
+  .checkBoxInput {
+    width: 3vw;
+    height: 3vw;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .notificationsTitle {
+    margin-top: 2vw;
+  }
 }

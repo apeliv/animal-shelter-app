@@ -60,7 +60,7 @@ const NotificationInput = ({
           minLength={10}
           maxLength={200}
           rows={5}
-          cols={50}
+          cols={30}
           value={updatedtext}
           onChange={(e) => setUpdatedText(e.target.value)}
         ></textarea>

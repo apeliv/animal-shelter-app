@@ -1,13 +1,10 @@
 .formSection {
-  width: 72vw;
-  height: fit-content;
   padding-bottom: 2vw;
   border: 3px solid rgb(189, 188, 188);
   border-radius: 15px;
   background-color: rgb(189, 188, 188);
   color: black;
   margin: 2vw auto;
-  font-size: 1.5vw;
   text-align: left;
 }
 
@@ -43,7 +40,6 @@
   width: 50%;
   background-color: white;
   color: gray;
-  font-size: 1.5vw;
   border-radius: 10px;
 }
 
@@ -58,17 +54,10 @@
   width: 55%;
   background-color: white;
   color: black;
-  font-size: 1.5vw;
   border-radius: 10px;
 }
 
 .checkboxLabel {
-  margin-left: 1vw;
-}
-
-.inputCheckBox {
-  width: 1.5vw;
-  height: 1.5vw;
   margin-left: 1vw;
 }
 
@@ -77,7 +66,6 @@
   width: 75%;
   background-color: white;
   color: black;
-  font-size: 1.5vw;
   border-radius: 10px;
   margin-bottom: 5%;
   margin-top: 3%;
@@ -98,14 +86,83 @@
   background-color: rgb(30, 125, 73);
   padding: 1vw 2vw;
   height: fit-content;
-  font-size: 1.5vw;
   margin-top: 3vw;
   justify-self: center;
 }
 
 .warning {
   color: red;
-  font-size: 1vw;
   text-align: center;
   margin-right: 45%;
+}
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .formSection {
+    width: 90%;
+    position: absolute;
+    top: 28%;
+    right: 0;
+    left: 0;
+    font-size: 4vw;
+  }
+
+  .inputText {
+    font-size: 2.5vw;
+  }
+
+  .inputSelect {
+    font-size: 2.5vw;
+  }
+
+  .inputDate {
+    font-size: 2.5vw;
+  }
+
+  .inputCheckBox {
+    width: 3vw;
+    height: 3vw;
+    justify-content: first baseline;
+  }
+
+  .warning {
+    font-size: 2.5vw;
+  }
+
+  .button {
+    font-size: 2.5vw;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .formSection {
+    width: 72vw;
+    height: fit-content;
+    font-size: 1.5vw;
+  }
+
+  .inputText {
+    font-size: 1.5vw;
+  }
+
+  .inputSelect {
+    font-size: 1.5vw;
+  }
+
+  .inputDate {
+    font-size: 1.5vw;
+  }
+
+  .inputCheckBox {
+    width: 1.5vw;
+    height: 1.5vw;
+    margin-left: 1vw;
+  }
+
+  .warning {
+    font-size: 1vw;
+  }
+
+  .button {
+    font-size: 1.5vw;
+  }
 }
